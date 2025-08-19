@@ -1,10 +1,11 @@
-name = "panhub-shenzjd-com"
-main = ".output/server/index.mjs"
-compatibility_date = "2025-07-15"
-compatibility_flags = ["nodejs_compat"]
+# 给你的 Worker 取一个名字
+name = "it-tool"
 
-[assets]
-directory = "dist"
-binding = "ASSETS"
+# 使用一个近期的日期
+compatibility_date = "2025-08-19"
 
-
+# [site] 配置是关键
+# 它告诉 Worker 这是一个静态网站
+[site]
+# bucket 指向你构建后输出的静态资源目录
+bucket = "./dist"
