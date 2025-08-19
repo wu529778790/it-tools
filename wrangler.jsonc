@@ -1,8 +1,0 @@
-{
-  "name": "it-tools-static-worker",
-  "main": "workers-site/index.js",
-  "compatibility_date": "2025-08-19",
-  "site": {
-    "bucket": "./dist"
-  }
-}
