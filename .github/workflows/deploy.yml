@@ -30,13 +30,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'pnpm'
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 9
-          run_install: false
+      - name: Install pnpm
+        run: npm install -g pnpm@9
 
       - name: Get pnpm store directory
         shell: bash
